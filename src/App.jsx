@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider
 } from 'react-router-dom'
 import './App.css'
@@ -73,11 +73,10 @@ const routes = [{
 
 }]
 
-const router = createBrowserRouter(routes)
+const router = createHashRouter(routes)
 
 export default function App() {
   
-
   return (
     <>
       <RouterProvider router={router} />
