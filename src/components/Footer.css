@@ -1,0 +1,9 @@
+footer {
+  padding: 1rem;
+  background-color: var(--blue-dark);
+  color: white;
+
+  @media (min-width: 768px) {
+    padding: 1rem 2rem;
+  }
+}
