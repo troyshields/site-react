@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react'
-import './Meme.css'
+import '../styles/Meme.css'
 
 export default function Meme()  {
 
@@ -42,7 +42,8 @@ export default function Meme()  {
   return (
     <>
       <h1>Meme Generator</h1>
-      <div className='meme'>
+      
+      <div className='meme-generator'>
         
         <div className="form">
           <label>Top Text

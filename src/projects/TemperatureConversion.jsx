@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './TemperatureConversion.css'
+import '../styles/TemperatureConversion.css'
 
 export default function TemperatureConversion() {
   const [fahrenheit, setFahrenheit] = useState(0)

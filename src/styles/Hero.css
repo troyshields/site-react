@@ -1,0 +1,87 @@
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1rem 0;
+  margin-bottom: 5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 5vw;
+    left: 15vw;
+    width: 20vw;
+    height: 20vw;
+    background-color: var(--blue);
+    filter: blur(100px);
+    z-index: -1;
+  }
+
+  &::after {
+    top: 20vw;
+    left: 65vw;
+    opacity: .5;
+  }
+
+  .hero-info {
+    flex: 60% 0 0;
+    
+    @media (min-width: 768px) {
+      padding-right: 3rem;
+    }
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      text-align: center;
+
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 0 0 2rem;
+    }
+  }
+
+  .hero-img {
+    text-align: center;
+    padding-bottom: 1rem;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    @media (min-width: 768px) {
+      padding-bottom: 0;
+    }
+    
+    img {
+      border-radius: 100%;
+      max-width: 100%;
+      width: 300px;
+    }
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}

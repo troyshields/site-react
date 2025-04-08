@@ -2,8 +2,8 @@ export const timelineData = [
   {
     id: '1',
     year: 1997,
-    text: "Introduced to Photoshop and media layout software (ie. yearbook).",
-    category: "My Journey",
+    text: "Introduced to Photoshop and PageMaker to eventually take over as yearbook editor in a few years.",
+    category: "My Career",
   },
   {
     id: '4',
@@ -15,13 +15,13 @@ export const timelineData = [
     id: '2',
     year: 2001,
     text: "Enrolled at Art Institute of Dallas in the Multimedia and Web Development degree.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '3',
     year: 2001,
     text: "Started an internship at a large company in the graphic design department. Became full time after a few months and finished my degree with evening classes.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '4a',
@@ -45,13 +45,13 @@ export const timelineData = [
     id: '5',
     year: 2004,
     text: "Graduated from AiD and moved to San Diego.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '6',
     year: 2004,
     text: "Started work at PINT as part of a team of designers and frontend developers.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '9',
@@ -92,14 +92,14 @@ export const timelineData = [
   {
     id: '13',
     year: 2007,
-    text: "Started work at Achieve and was introduced to Drupal. Mentored by some rock star developers and was quickly sold.",
-    category: "My Journey",
+    text: "Started work at Achieve and was introduced to Drupal. Mentored by some rock star developers and quickly dove in.",
+    category: "My Career",
   },
   {
     id: '14',
     year: 2007,
     text: "Started building Drupal sites as a contractor.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '17',
@@ -123,7 +123,7 @@ export const timelineData = [
     id: '18',
     year: 2008,
     text: "Started contracting with WorkHabit.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '21',
@@ -159,7 +159,7 @@ export const timelineData = [
     id: '26',
     year: 2010,
     text: "Moved to NYC as part of a small team working on Major League Soccer's multisite setup.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '29',
@@ -189,7 +189,7 @@ export const timelineData = [
     id: '30',
     year: 2011,
     text: "Continued as a contractor for many large and small firms in NYC.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '34',
@@ -218,8 +218,8 @@ export const timelineData = [
   {
     id: '38',
     year: 2014,
-    text: "Served for 4 years on the board of directors of Big Apple Rec Sports organization. It was a great experience in leadership, decision making, collaboration and community engagement.",
-    category: "My Journey",
+    text: "Served for 4 years on the board of directors of Big Apple Rec Sports. It was a great experience in leadership, decision making, collaboration and community engagement.",
+    category: "My Career",
   },
   {
     id: '39',
@@ -267,13 +267,13 @@ export const timelineData = [
     id: '47',
     year: 2018,
     text: "Started working at Zivtech.",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '48',
     year: 2018,
     text: "Moved to Philadelphia!",
-    category: "My Journey",
+    category: "My Career",
   },
   {
     id: '49',

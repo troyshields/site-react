@@ -1,15 +1,16 @@
 import { timelineData } from '../data/aboutdata'
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import "../styles/About.css"
 
 export default function AboutPage() {
-  const [filter, setFilter] = useState('Show All');
+  const [filter, setFilter] = useState('All');
 
   const handleFilterChange = (category) => {
     setFilter(category);
   };
 
   const filteredTimeline = timelineData.filter((item) => {
-    if (filter === 'Show All') {
+    if (filter === 'All') {
       return true;
     }
     return item.category === filter;
@@ -25,9 +26,9 @@ export default function AboutPage() {
 
   return (
     <>
-      <h1>About Me</h1>
+      <h1>About</h1>
 
-      <h2>It's a journey!</h2>
+      <p>A look back at some significant and not so significant events that overlapped with my professional career.</p>
 
       <fieldset className='button-group'>
         <legend className='sr-only'>Timeline filter</legend>
@@ -36,21 +37,21 @@ export default function AboutPage() {
           <input
             type="radio"
             name="timeline-filter"
-            value="Show All"
-            checked={filter === 'Show All'}
-            onChange={() => handleFilterChange('Show All')}
+            value="All"
+            checked={filter === 'All'}
+            onChange={() => handleFilterChange('All')}
           />
-          <span>Show All</span>
+          <span>All</span>
         </label>
         <label>
           <input
             type="radio"
             name="timeline-filter"
-            value="My Journey"
-            checked={filter === 'My Journey'}
-            onChange={() => handleFilterChange('My Journey')}
+            value="My Career"
+            checked={filter === 'My Career'}
+            onChange={() => handleFilterChange('My Career')}
           />
-          <span>My Journey</span>
+          <span>My Career</span>
         </label>
         <label>
           <input

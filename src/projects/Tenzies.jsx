@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import Die from './Die'
 import { nanoid } from 'nanoid'
 import ReactConfetti from 'react-confetti'
-import './Tenzies.css'
+import '../styles/Tenzies.css'
 
 export default function Tenzies() {
 

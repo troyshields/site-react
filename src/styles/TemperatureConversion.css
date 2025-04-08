@@ -1,5 +1,8 @@
 .container-degrees {
   display: flex;
+  background-color: white;
+  color: black;
+  padding: 2rem;
 
   .degree {
     padding: 1rem 1rem 1rem 0;

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import "./StopWatch.css"
+import "../styles/StopWatch.css"
 
 export default function StopWatch() {
 

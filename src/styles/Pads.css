@@ -1,9 +1,15 @@
+.pads {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+}
 
 .pad-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(2, 100px);
   gap: 10px;
+
   button {
     height: 100px;
     width: 100px;

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import './RecipeGenerator.css'
+import '../styles/RecipeGenerator.css'
 import Recipe from '../components/Recipe.jsx'
 import IngredientList from '../components/IngredientList.jsx'
 
@@ -45,28 +45,29 @@ export default function RecipeGenerator()  {
     <>
       <h1>Recipe Generator</h1>
       
-      <form onSubmit={addIngredient} className='form-add-ingredient'>
-        <input 
-            type="text"
-            placeholder="e.g. oregano"
-            aria-label="Add ingredient"
-            name="ingredient"
-            id="ingredientInput"
-        />
-        <button type="submit">Add ingredient</button>
-      </form>
+      <div className="recipe-generator">
+        <form onSubmit={addIngredient} className='form-add-ingredient'>
+          <input 
+              type="text"
+              placeholder="e.g. oregano"
+              aria-label="Add ingredient"
+              name="ingredient"
+              id="ingredientInput"
+          />
+          <button type="submit">Add ingredient</button>
+        </form>
 
-      {ingredients.length > 0 ?
-      <IngredientList 
-        ingredients={ingredients} 
-        toggle={toggleRecipeShown}
-        ref={recipeSection} />
-      : null}
+        {ingredients.length > 0 ?
+        <IngredientList 
+          ingredients={ingredients} 
+          toggle={toggleRecipeShown}
+          ref={recipeSection} />
+        : null}
 
-      {recipeShown && 
-        <Recipe />
-      }
-
+        {recipeShown && 
+          <Recipe />
+        }
+      </div>
     </>
   )
 }

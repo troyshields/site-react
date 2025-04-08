@@ -1,5 +1,4 @@
 .tenzies {
-  background-color: #0B2434;
   padding: 2rem 1rem;
 
   .inner {
@@ -7,7 +6,7 @@
     text-align: center;
     padding: 1rem;
     background-color: #eee;
-    margin: auto;
+    color: black;
     border-radius: 10px;
   }
 

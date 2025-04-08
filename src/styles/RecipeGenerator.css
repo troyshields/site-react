@@ -1,4 +1,10 @@
 
+.recipe-generator {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+}
+
 .form-add-ingredient {
   display: flex;
   padding: 1rem 0;
@@ -25,27 +31,18 @@
   }
 
 }
-.card {
-  border: 5px solid #eee;
-  padding: 2rem;
 
-
-  button {
-    img {
-      max-width: 20px;
-    }
-  }
- }
-
- form {
+form {
   padding: 1rem;
 
   div {
     margin-bottom: 1rem;
   }
+
   label {
     display: block;
   }
+
  }
  
 .main-body {
@@ -55,8 +52,10 @@
     margin: 0;
   }
 }
- .get-recipe-container {
+
+.get-recipe-container {
   background-color: #eee;
+  color: black;
   padding: 2rem;
   border-radius: 10px;
   display: flex;
@@ -75,7 +74,8 @@
   h3 {
     margin: 0;;
   }
- }
- .show-recipe {
-  padding: 2rem;
+}
+
+.show-recipe {
+  padding: 2rem 0;
 }

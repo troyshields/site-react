@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import './Assembly.css'
+import '../styles/Assembly.css'
 import { languages } from '../data/assemblylanguages'
 import clsx from 'clsx'
 import { getFarewellText, getRandomWord } from '../data/assemblyutils'

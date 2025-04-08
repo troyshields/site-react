@@ -1,0 +1,148 @@
+.navbar {
+  padding:  0;
+  height: 72px;
+  /* font-family: monospace; */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  letter-spacing: 1px;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    letter-spacing: 3px;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    border: 0;
+    color: white;
+    padding: 1rem 0;
+  }
+}
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  height: 50px;
+  padding: 0 1rem;
+
+  &[aria-expanded=true] {
+    background-color: black;
+
+    .bar {
+      
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        margin: -1px;
+      }
+      
+      &:nth-child(2) {
+        transform: rotate(135deg);
+        margin: -2px;
+      }
+      
+      &:nth-child(3) {
+        display: none;
+      }
+    }  
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  .bar {
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }  
+}
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 4.3rem;
+  right: 1rem;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: black;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  &.active {
+    display: flex;
+  }
+
+  li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #333;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+      border: 0;
+      padding: 0 1rem;;
+    }
+
+    &.active {
+      
+      a {
+        border-left: 3px solid var(--blue-light);
+
+        @media (min-width: 768px) {
+          border-left: 0;
+          border-bottom: 3px solid var(--blue-light);
+        }
+      }
+    }
+    
+    a {
+      display: block;
+      padding: 1rem;
+      color: white;
+      text-decoration: none;
+
+      @media (min-width: 768px) {
+        border: 0;
+        padding: 1rem 0;
+        border-bottom: 3px solid transparent;
+      }
+      
+      &:hover {
+        border-bottom: 3px solid white;
+      }
+    }
+  }
+}

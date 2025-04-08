@@ -1,6 +1,8 @@
-.meme {
+.meme-generator {
+  background-color: white;
+  color: black;
+  padding: 2rem;
   max-width: 500px;
-  margin: auto;
 
   .form {
     display: grid;

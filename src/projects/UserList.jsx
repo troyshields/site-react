@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "../styles/UserList.css"
 
 export default function UserList() {
   const [users, setUsers] = useState(null)
@@ -52,27 +53,29 @@ export default function UserList() {
   }
 
   return (
-    <div>
-      <h1>User List</h1>
-      <input
-        type="text"
-        placeholder="Filter by name..."
-        value={searchTerm}
-        onChange={handleSearch}
-      />
-      <ul>
-        {filteredUsers.length > 0 ? (
-          filteredUsers.map((user) => (
-            <li key={user.id}>
-              {user.name}<br />
-              {user.email}<br />
-              {user.company.name}
-            </li>
-          ))
-        ) : (
-          <li>No users match that search.</li>
-        )}
-      </ul>
-    </div>
+    <>
+    <div className="user-list">
+        <h1>User List</h1>
+        <input
+          type="text"
+          placeholder="Filter by name..."
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+        <ul>
+          {filteredUsers.length > 0 ? (
+            filteredUsers.map((user) => (
+              <li key={user.id}>
+                {user.name}<br />
+                {user.email}<br />
+                {user.company.name}
+              </li>
+            ))
+          ) : (
+            <li>No users match that search.</li>
+          )}
+        </ul>
+      </div>
+    </>
   );
 }

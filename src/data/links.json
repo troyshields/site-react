@@ -4,19 +4,19 @@
       "id": 1,
       "url": "https://www.linkedin.com/in/troyshields/",
       "title": "LinkedIn",
-      "src": "/site-react/images/logo-linkedin.png"
+      "src": "/site-react/images/icon-linkedin-white.svg"
     },
     {
       "id": 2,
       "url": "https://github.com/troyshields",
       "title": "GitHub",
-      "src": "/site-react/images/logo-github.png"
+      "src": "/site-react/images/icon-github-white.svg"
     },
     {
       "id": 3,
       "url": "https://www.drupal.org/u/tshields",
       "title": "Drupal",
-      "src": "/site-react/images/logo-drupal.png"
+      "src": "/site-react/images/icon-drupal-white.svg"
     }
   ]
 }

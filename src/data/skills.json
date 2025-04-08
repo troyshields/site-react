@@ -1,0 +1,52 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "CSS"
+    },
+    {
+      "id": 4,
+      "title": "Drupal"
+    },
+    {
+      "id": 3,
+      "title": "a11y"
+    },
+    {
+      "id": 10,
+      "title": "SASS"
+    },
+    {
+      "id": 8,
+      "title": "Gulp"
+    },
+    {
+      "id": 9,
+      "title": "Storybook"
+    },
+    {
+      "id": 5,
+      "title": "HTML5"
+    },
+    {
+      "id": 2,
+      "title": "React"
+    },
+    {
+      "id": 6,
+      "title": "Tailwind"
+    },
+    {
+      "id": 7,
+      "title": "Typescript"
+    },
+    {
+      "id": 11,
+      "title": "Twig"
+    },
+    {
+      "id": 12,
+      "title": "Figma"
+    }
+  ]
+}

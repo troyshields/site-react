@@ -1,21 +1,17 @@
-:root {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  --blue: #2D7D9A;
-  --blue-dark: #1c4d5f;
-  --border: #ddd;
-}
+@import url("Vars.css");
 
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--blue);
+  color: white;
+  line-height: 1.6;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header *,
@@ -24,11 +20,35 @@ main * {
 }
 
 a {
-  color: var(--blue-dark);
+  color: white;
 
   &:hover {
     text-decoration: none;
     border-bottom: 1px solid;
+  }
+}
+
+.button {
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: white;
+  color: var(--blue-dark);
+  text-decoration: none;
+
+  &:hover {
+    outline: 3px solid var(--blue-dark);
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 0 0 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -49,58 +69,24 @@ a {
   }
 }
 
-.profilepic {
-  margin: 1rem;
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    padding: 1rem 4rem;
+  }
 }
 
 main {
+  .container {
+    padding: 1rem;
 
-  .content {
-    max-width: 800px;
-    padding: 2rem 1rem;
-  
     @media (min-width: 768px) {
-      padding: 2rem 2rem 4rem;
+      padding: 5rem 4rem;
     }
   }
-}
-
-.button-group {
-  border: 0;
-  padding: 0;
-  margin: 2rem 0;
-
-  label {
-    display: inline-block;
-    margin-right: .5rem;
-    padding: .5rem;
-
-    &:has(input[type='radio']:checked) {
-      border: 1px dashed #999;
-      background-color: #f9f9f9;
-    }
-
-    input {
-      margin: 0 .5rem 0 0;
-    }
-  }
-}
-
-.timeline {
-  h3 {
-    margin-top: 2rem;
-  }
-  
-  
-  p {
-    border-left: 3px solid #333;
-    padding-left: 1rem;
-    
-    &.industry-event {
-      border-left: 3px solid #ccc;
-    }
-  }
-  
 }
 
 .page404 {
@@ -115,7 +101,7 @@ main {
 
 h1,
 h2 {
-  font-weight: 300;
+  font-weight: 500;
   margin: 0 0 1rem;
   line-height: 1;
 }
@@ -139,8 +125,33 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
 
 h3 {
   font-size: 1.1rem;
+}
+
+
+
+.intro {
+  margin-bottom: 5rem;
+}
+
+.key-strengths {
+  margin-bottom: 5rem;
+}
+
+.key-strengths-items {
+  
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+  }
+
+  h3 {
+    margin: 0 0 1rem;
+  }
 }

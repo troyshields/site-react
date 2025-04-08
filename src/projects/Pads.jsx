@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Pad from "../components/Pad.jsx"
 import padsData from "../data/pads.js"
-import './Pads.css'
+import '../styles/Pads.css'
 
 export default function Pads(props) {
   
@@ -42,13 +42,15 @@ export default function Pads(props) {
   return (
     <>
       <h1>pads</h1>
-      <div className="pad-container">
-        {padsButtons}
-      </div>
+      <div className="pads">
+        <div className="pad-container">
+          {padsButtons}
+        </div>
 
-      <div className='pad-buttons'>
-        <button onClick={handleToggleAllOff}>Turn all Off</button>
-        <button onClick={handleToggleAllOn}>Turn all On</button>
+        <div className='pad-buttons'>
+          <button onClick={handleToggleAllOff}>Turn all Off</button>
+          <button onClick={handleToggleAllOn}>Turn all On</button>
+        </div>
       </div>
     </>
   )
