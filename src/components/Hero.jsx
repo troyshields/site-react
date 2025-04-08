@@ -1,5 +1,6 @@
-import "../styles/Hero.css";
-import profilePic2 from "./site-react/images/profile-web2.jpg";
+import "../styles/Hero.css"
+import profilePic2 from "../assets/profile-web2.jpg";
+
 
 export default function Hero() {
 
