@@ -13,6 +13,10 @@
       grid-template-columns: repeat(6, 1fr);
     }
 
+    &:has(li:hover) li:not(:hover) {
+      filter: blur(4px)
+    }
+
     li {  
       position: relative;
       display: block;
