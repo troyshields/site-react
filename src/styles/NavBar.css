@@ -1,13 +1,12 @@
 .navbar {
   padding:  0;
-  height: 72px;
-  /* font-family: monospace; */
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 }
 
 .navbar-brand {
@@ -73,8 +72,9 @@
     height: 3px;
     background-color: white;
     margin: 3px 0;
-  }  
+  }
 }
+
 .nav-menu {
   display: none;
   flex-direction: column;

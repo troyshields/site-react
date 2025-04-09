@@ -39,7 +39,11 @@ button {
   font-size: 1.75rem;
   font-weight: bold;
   padding: 10px 15px;
-  margin: 10px;
+  margin: 5px;
+
+  @media (min-width: 768px) {
+    margin: 10px;
+  }
 
   &.isheld {
     background-color: #59E391;

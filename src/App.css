@@ -1,5 +1,11 @@
 @import url("Vars.css");
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -70,7 +76,7 @@ p {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1030px;
   margin: auto;
   padding: 1rem;
 

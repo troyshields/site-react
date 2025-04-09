@@ -6,14 +6,22 @@
 }
 
 .form-add-ingredient {
-  display: flex;
   padding: 1rem 0;
 
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   input {
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     padding: 10px;
     border: 1px solid var(--border);
     border-radius: 5px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 
   button {
@@ -58,9 +66,12 @@ form {
   color: black;
   padding: 2rem;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   button {
     background-color: blueviolet;

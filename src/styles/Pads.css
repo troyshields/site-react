@@ -6,9 +6,12 @@
 
 .pad-container {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(2, 50%);
   gap: 10px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 100px);
+  }
 
   button {
     height: 100px;

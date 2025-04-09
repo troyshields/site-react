@@ -6,9 +6,13 @@
 
   .form {
     display: grid;
-    grid-template: auto auto / 1fr 1fr;
-    gap: 17px;
-    margin-bottom: 17px;
+    grid-template: 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+    
+    @media (min-width: 768px) {
+      grid-template: auto auto / 1fr 1fr;  
+    }
   }
 
   .form input {
@@ -53,7 +57,7 @@
     margin-block: 15px;
     padding-inline: 5px;
     font-family: impact, sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -67,6 +71,10 @@
         0 -2px 0 #000,
         -2px 0 0 #000,
         2px 2px 5px #000;
+    
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   .bottom {
