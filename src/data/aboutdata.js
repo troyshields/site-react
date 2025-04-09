@@ -8,7 +8,7 @@ export const timelineData = [
   {
     id: '4',
     year: 2001,
-    text: "Dries releases Drupal. This will come up later!",
+    text: "Dries Buytaert releases Drupal. This will come up later!",
     category: "Industry",
   },
   {
